@@ -16,7 +16,15 @@ APRENDA EXPLORAR AO MÁXIMOS OS RECURSOS NATIVOS DO JAVASCRIPT PARA MANIPULAR DE
 
 ## <a name="parte1">1 - Introdução ao DOM</a>
 
+#### 01 - O que é DOM 
 
+
+#### 02 - Preparando o Projeto e document JavaScript 
+
+```js
+console.log(document.title = "Novo título da página");
+console.log(document);
+```
 
 [Voltar ao Índice](#indice)
 
