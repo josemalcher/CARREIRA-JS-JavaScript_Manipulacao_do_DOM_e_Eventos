@@ -29,6 +29,7 @@ setTimeout(function () {
 */
 
 // 04 - getElementsByTagName JavaScript
+/*
 
 setTimeout(function () {
 
@@ -42,6 +43,18 @@ setTimeout(function () {
     } else {
         console.log("Não exite tag h3")
     }
+
+
+}, 1000);
+*/
+
+// 05 - getElementsByClassName JavaScript
+
+
+setTimeout(function () {
+
+   //console.log(document.getElementsByClassName('haga5'))
+    document.getElementsByClassName('haga5')[0].innerHTML = "<h5>ALTERADO PELO JS - ClassName</h5>";
 
 
 }, 1000);

@@ -90,6 +90,14 @@ setTimeout(function () {
 
 #### 05 - getElementsByClassName JavaScript
 
+```js
+setTimeout(function () {
+
+   //console.log(document.getElementsByClassName('haga5'))
+    document.getElementsByClassName('haga5')[0].innerHTML = "<h5>ALTERADO PELO JS - ClassName</h5>";
+
+}, 1000);
+```
 
 #### 06 - querySelector JavaScript
 
