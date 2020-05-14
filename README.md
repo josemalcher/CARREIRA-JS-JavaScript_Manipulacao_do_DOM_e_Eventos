@@ -33,6 +33,41 @@ console.log(document);
 
 ## <a name="parte2">2 - DOM na Prática</a>
 
+#### 01 - document.write JavaScript
+
+
+#### 02 - getElementById JavaScript
+
+
+#### 03 - getElementsByName JavaScript
+
+
+#### 04 - getElementsByTagName JavaScript
+
+
+#### 05 - getElementsByClassName JavaScript
+
+
+#### 06 - querySelector JavaScript
+
+
+#### 07 - querySelectorAll JavaScript
+
+
+#### 08 - parentNode JavaScript
+
+
+#### 09 - children, firstElementChild, lastElementChild JavaScript
+
+
+#### 10 - hasAttribute, getAttribute, setAttribute JavaScript
+
+
+#### 11 - insertAdjacentHTML JavaScript
+
+
+#### 12 - srollTo e scroll (topo e footer) com JavaScript
+
 
 
 [Voltar ao Índice](#indice)
