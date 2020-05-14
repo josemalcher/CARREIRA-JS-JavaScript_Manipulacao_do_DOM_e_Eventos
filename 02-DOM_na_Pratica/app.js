@@ -16,6 +16,7 @@ setTimeout(function () {
 }, 3000);
 
 // 03 - getElementsByName JavaScript
+/*
 
 setTimeout(function () {
     console.log(document.getElementsByName("div-name"));
@@ -25,3 +26,23 @@ setTimeout(function () {
     nameTag[0].innerText = "Ajustando o primeiro name;";
 
 }, 1000);
+*/
+
+// 04 - getElementsByTagName JavaScript
+
+setTimeout(function () {
+
+    var tagsName = document.getElementsByTagName('div');
+
+    tagsName[0].innerHTML = '<h1>add H1</h1>';
+    tagsName[1].innerHTML = '<h2>add H2</h2>';
+
+    if (tagsName[2]) {
+        tagsName[2].innerHTML = '<h3>add H3</h3>';
+    } else {
+        console.log("Não exite tag h3")
+    }
+
+
+}, 1000);
+

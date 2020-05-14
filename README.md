@@ -70,6 +70,23 @@ setTimeout(function () {
 
 #### 04 - getElementsByTagName JavaScript
 
+```js
+setTimeout(function () {
+
+    var tagsName = document.getElementsByTagName('div');
+
+    tagsName[0].innerHTML = '<h1>add H1</h1>';
+    tagsName[1].innerHTML = '<h2>add H2</h2>';
+
+    if (tagsName[2]) {
+        tagsName[2].innerHTML = '<h3>add H3</h3>';
+    } else {
+        console.log("Não exite tag h3")
+    }
+
+
+}, 1000);
+```
 
 #### 05 - getElementsByClassName JavaScript
 
