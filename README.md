@@ -54,6 +54,19 @@ setTimeout(function () {
 
 #### 03 - getElementsByName JavaScript
 
+- [https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementsByName](https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementsByName)
+
+```js
+
+setTimeout(function () {
+    console.log(document.getElementsByName("div-name"));
+    console.log(document.getElementsByName("div-name")[1].innerText = "Alterando o segundo");
+
+    var nameTag = document.getElementsByName("div-name");
+    nameTag[0].innerText = "Ajustando o primeiro name;";
+
+}, 1000);
+```
 
 #### 04 - getElementsByTagName JavaScript
 
