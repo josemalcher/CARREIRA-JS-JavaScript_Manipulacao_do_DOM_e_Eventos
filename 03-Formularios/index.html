@@ -14,10 +14,11 @@
 <body>
 <div class="container">
 
-    <form>
+    <form action="#" method="post" class="form" onsubmit="return onSubmitFunc()">
         <div class="form-group">
             <label for="nome">Nome</label>
-            <input type="text" class="form-control" id="nome" placeholder="Enter Nome">
+            <input type="text" class="form-control" id="nome" name="name" placeholder="Enter Nome">
+            <small id="result_name" class="form-text text-muted"></small>
         </div>
         <div class="form-group">
             <label for="exampleInputEmail1">Email address</label>
@@ -81,5 +82,7 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+
+<script src="app.js"></script>
 </body>
 </html>

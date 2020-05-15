@@ -209,6 +209,24 @@ function topo() {
 
 #### 02 - Capiturar Valores Formulários com JavaScript (text, email, password)
 
+```html
+<form action="#" method="post" class="form" onsubmit="return onSubmitFunc()">
+        <div class="form-group">
+            <label for="nome">Nome</label>
+            <input type="text" class="form-control" id="nome" name="name" placeholder="Enter Nome">
+            <small id="result_name" class="form-text text-muted"></small>
+        </div>
+```
+
+```js
+function onSubmitFunc(event) {
+    var nome = document.getElementsByName('name')[0].value;
+    document.getElementById('result_name').innerText = "Olá " + nome;
+
+
+    return false;
+}
+```
 
 
 #### 03 - Capiturar Valores Formulários com JavaScript (checkbox, select, radio, textarea)
