@@ -264,6 +264,50 @@ function onSubmitFunc(event) {
 
 ## <a name="parte4">4 - DOM CSS</a>
 
+#### 01 - JavaScript Alterar CSS Página 
+
+```html
+<!doctype html>
+<html lang="pt_BR">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="style.css">
+    <title>04-DOM_CSS</title>
+</head>
+<body>
+<h1 id="haga1">Modelo CSS -> JS -> CSS</h1>
+<h2 id="haga2">Modelo CSS -> JS -> CSS</h2>
+<hr>
+<p>Parágrafo</p>
+<hr>
+<script src="app.js"></script>
+</body>
+</html>
+```
+
+```js
+var bodys = document.body.style;
+
+setTimeout(function () {
+
+    bodys.backgroundColor = "#000";
+    bodys.color = "#FFF";
+    var titulo = document.getElementById("haga1");
+    titulo.style.border  = "2px solid #999";
+    titulo.style.padding = "10px";
+
+}, 2000);
+
+
+```
+
+#### 02 - Mudar Cor Página Dinâmicamente com JavaScript
+
+
+#### 03 - Criando um pisca-pisca com JavaScript
+
 
 
 [Voltar ao Índice](#indice)
