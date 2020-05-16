@@ -16,6 +16,9 @@ function changeCor(event, cor) {
         event.returnValue;
     }
     document.body.style.background = cor;
+
+    swal("Cor Alterada");
+
     return false;
 }
 

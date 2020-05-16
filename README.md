@@ -403,7 +403,15 @@ function changeCor(event, cor) {
 
 #### 04 - Usando o SweetAlert
 
+- [https://sweetalert.js.org/](https://sweetalert.js.org/)
 
+```html
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+```
+
+```js
+swal ( "Oops" ,  "Something went wrong!" ,  "error" )
+```
 
 #### 05 - Eventos de carga no JavaScript
 
