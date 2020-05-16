@@ -345,6 +345,43 @@ pisca();
 
 ## <a name="parte5">5 - Events</a>
 
+#### 01 - Propagação de Eventos com JavaScript
+
+ ```js
+document.addEventListener("click", eventClick);
+
+function eventClick() {
+    alert("clicou");
+}
+```
+
+#### 02 - Cancelar a Propagação Padrão de Eventos com JavaScript
+
+
+
+#### 03 - Eventos de Mouse com JavaScript
+
+
+
+#### 04 - Usando o SweetAlert
+
+
+
+#### 05 - Eventos de carga no JavaScript
+
+
+
+#### 06 - Eventos de scroll com JavaScript
+
+
+
+#### 07 - Eventos de Teclado com o JavaScript
+
+
+
+#### 08 - Eventos de Formulário com JavaScript
+
+
 
 
 [Voltar ao Índice](#indice)
