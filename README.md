@@ -321,7 +321,22 @@ function setBackGround(color) {
 
 #### 03 - Criando um pisca-pisca com JavaScript
 
+```js
 
+var piscaPisca = document.getElementById("haga2");
+
+function pisca() {
+    piscaPisca.style.backgroundColor = "red";
+    setTimeout(pisca2, 1000);
+}
+
+function pisca2() {
+    piscaPisca.style.backgroundColor = "blue";
+    setTimeout(pisca, 1000);
+}
+
+pisca();
+```
 
 [Voltar ao Índice](#indice)
 
