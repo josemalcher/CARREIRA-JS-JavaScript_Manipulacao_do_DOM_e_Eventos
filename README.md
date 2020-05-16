@@ -305,6 +305,19 @@ setTimeout(function () {
 
 #### 02 - Mudar Cor Página Dinâmicamente com JavaScript
 
+```html
+<button type="submit" onclick="setBackGround('black')">BLACK</button>
+<button type="submit" onclick="setBackGround('red')">RED</button>
+```
+
+```js
+var bodys = document.body.style;
+
+function setBackGround(color) {
+    bodys.color = "#FFF"
+    bodys.backgroundColor = color;
+}
+```
 
 #### 03 - Criando um pisca-pisca com JavaScript
 

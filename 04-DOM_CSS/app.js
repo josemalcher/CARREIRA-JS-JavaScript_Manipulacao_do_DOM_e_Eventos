@@ -1,4 +1,5 @@
 var bodys = document.body.style;
+/*
 
 setTimeout(function () {
 
@@ -9,4 +10,9 @@ setTimeout(function () {
     titulo.style.padding = "10px";
 
 }, 2000);
+*/
 
+function setBackGround(color) {
+    bodys.color = "#FFF"
+    bodys.backgroundColor = color;
+}
