@@ -415,7 +415,29 @@ swal ( "Oops" ,  "Something went wrong!" ,  "error" )
 
 #### 05 - Eventos de carga no JavaScript
 
+```html
+<body onload="loadPage()" onresize="resizePage(event)">
+```
 
+```js
+
+function loadPage() {
+    swal("Página carregou com sucesso", '', 'success');
+
+}
+
+function resizePage(event) {
+    //console.log(event);
+    //console.log(window.innerHeight);
+    var largura = window.innerWidth;
+    console.log(largura);
+    if (largura <= 700) {
+        document.body.style.background = "#000";
+    }else{
+        document.body.style.background = "#fff";
+    }
+}
+```
 
 #### 06 - Eventos de scroll com JavaScript
 

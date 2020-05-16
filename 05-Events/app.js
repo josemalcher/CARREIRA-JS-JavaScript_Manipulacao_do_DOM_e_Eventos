@@ -22,4 +22,21 @@ function changeCor(event, cor) {
     return false;
 }
 
-// 03 - Eventos de Mouse com JavaScript
+// 05
+
+function loadPage() {
+    swal("Página carregou com sucesso", '', 'success');
+
+}
+
+function resizePage(event) {
+    //console.log(event);
+    //console.log(window.innerHeight);
+    var largura = window.innerWidth;
+    console.log(largura);
+    if (largura <= 700) {
+        document.body.style.background = "#000";
+    }else{
+        document.body.style.background = "#fff";
+    }
+}
