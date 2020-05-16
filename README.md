@@ -357,11 +357,49 @@ function eventClick() {
 
 #### 02 - Cancelar a Propagação Padrão de Eventos com JavaScript
 
+```html
+<a href="https://josemalcher.net" onclick="changeCor(event, 'yellow')">Link com outra função, alterar COR</a>
+```
 
+```js
+function changeCor(event, cor) {
+    event = event || window.event; // IE
+
+    if (event.preventDefault()) {
+        event.preventDefault();
+    }
+    if (event.returnValue) {
+        event.returnValue;
+    }
+    document.body.style.background = cor;
+    return false;
+}
+```
 
 #### 03 - Eventos de Mouse com JavaScript
 
-
+```html
+<ul>
+    <li onclick="alert('on click')">ON CLICK</li>
+    <li ondblclick="alert('Souble CLICK')">on dbl click</li>
+    <li oncontextmenu="alert('OnContextMenu'); return false;">On Context menu </li>
+    <li onmousedown="alert('On Mouse Down')">On MOuse Down</li>
+    <li onmouseenter="console.log('on mouse Enter')" >On Mouse Enter - Console</li>
+    <li onmouseleave="console.log('on mouse Leaver')">On mouse Leaver - console</li>
+    <li onmousemove="console.log('Om Mouser Move');">
+        Om MOuser Move <p>Paragrafo</p>
+    </li>
+    <li onmouseover="console.log('Om Mouser OVER');">
+        Om MOuser OVER <p>Paragrafo</p>
+    </li>
+    <li onmouseout="console.log('Om Mouser OUT');">
+        Om MOuser OUT <p>Paragrafo</p>
+    </li>
+    <li onmouseup="console.log('Om Mouser UP');">
+        Om MOuser up <p>Paragrafo</p>
+    </li>
+</ul>
+```
 
 #### 04 - Usando o SweetAlert
 
