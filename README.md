@@ -441,7 +441,59 @@ function resizePage(event) {
 
 #### 06 - Eventos de scroll com JavaScript
 
+```html
+<!doctype html>
+<html lang="pt_BR">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="style.css">
+    <title>05 - Events</title>
+</head>
+<body>
 
+<header id="header" class="header">
+    <h1>Topo</h1>
+</header>
+
+<section class="content">
+    <h2>conteudo qualquer</h2>
+    <p>Outro texto 1</p>
+    <p>Outro texto 1</p>
+    <p>Outro texto 1</p>
+    <p>Outro texto 1</p>
+    <p>Outro texto 1</p>
+    <p>Outro texto 1</p>
+    <p>Outro texto 1</p>
+    <p>Outro texto 1</p>
+    <p>Outro texto 1</p>
+    <p>Outro texto 1</p>
+</section>
+
+<footer>
+    <p>Footer</p>
+</footer>
+<script src="scroll.js"></script>
+</body>
+</html>
+```
+
+```js
+function changeScroll(event) {
+    var doc = document.documentElement;
+    var top = window.pageYOffset || doc.scrollTo;
+    var header = document.getElementById('header');
+
+    if (top >= 200) {
+        header.classList.add('top');
+    } else {
+        header.classList.remove('top');
+    }
+}
+
+addEventListener('scroll', changeScroll);
+```
 
 #### 07 - Eventos de Teclado com o JavaScript
 

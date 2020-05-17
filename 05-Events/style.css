@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+.header {
+    background: #2222dd;
+    padding: 20px;
+    color: azure;
+    position: fixed;
+    width: 100%;
+}
+.top{
+    opacity: .8;
+}
+
+
+.content {
+    min-height: 1000px;
+    margin-top: 78px;
+    float: left;
+    width: 100%;
+}
+
+footer {
+    background: aqua;
+    padding: 10px;
+    float: left;
+    width: 100%;
+}
