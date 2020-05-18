@@ -538,7 +538,47 @@ function applyKey(event) {
 
 #### 08 - Eventos de Formulário com JavaScript
 
+```html
+<div class="container">
+    <form action="#" method="post" class="form" onreset="return false" onsubmit="register(event)">
+        <div class="form-group">
+            <label for="formGroupExampleInput">Example label - ONBLUR</label>
+            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input" onblur="swal('ONBLUR')">
+        </div>
+        <div class="form-group">
+            <label for="formGroupExampleInput2">Example label - ONCHANGE</label>
+            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Example input" onchange="swal('ONCHANGE')">
+        </div>
+        <div class="form-group">
+            <label for="formGroupExampleInput3">Example label - ONFOCUS</label>
+            <input type="text" class="form-control" id="formGroupExampleInput3" placeholder="Example input" onfocus="swal('ONFOCUS')">
+        </div>
+        <div class="form-group">
+            <label for="formGroupExampleInput4">Example label - ONSELECT</label>
+            <input type="text" class="form-control" id="formGroupExampleInput4" placeholder="Example input" onselect="swal('ONSELECT')">
+        </div>
+        <div class="form-group">
+            <label for="formGroupExampleInput5">Example label</label>
+            <input type="text" class="form-control" id="formGroupExampleInput5" placeholder="Example input">
+        </div>
+        <button type="reset" class="btn btn-primary">RESETAR FORM</button>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+```
 
+```js
+function register(event) {
+
+    event = event || window.event // IE
+    if (event.preventDefault) event.preventDefault();
+    if (event.returnValue) event.returnValue();
+
+    swal("Usuário cadastrado", "", "success")
+    return false;
+
+}
+```
 
 
 [Voltar ao Índice](#indice)
